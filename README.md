@@ -6,12 +6,6 @@ QueryHaven is a comprehensive platform designed to redefine the way developers s
 
 ## Key Features
 
-*   Data Preprocessing: Clean, transform, and scale data for modelling.
-*   Feature Engineering: Create lagged features to capture temporal patterns.
-*   Model Selection: Choose optimal models, including Long Short-Term Memory (LSTM) networks.
-*   Hyperparameter Tuning: Optimize model hyperparameters for improved performance.
-*   Visualization: Visualize predicted vs. actual stock prices for analysis.
-
 
 Q&A Ecosystem:
 
