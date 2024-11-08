@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryHaven - Redefining Knowledge Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>QueryHaven</h1>
+        <p>Your place to seek, share, and enhance coding knowledge.</p>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="query-list.html" class="nav-link">All Queries</a>
+            <a href="video-solutions.html" class="nav-link">Video Solutions</a>
+            <a href="monetize.html" class="nav-link">Monetize</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Query Section -->
+        <section id="query-section" class="card-section">
+            <h2>Browse Queries</h2>
+            <div id="queries">
+                <!-- Dynamic queries will be loaded here -->
+                <div class="card">
+                    <h3>What is Async Await in JavaScript?</h3>
+                    <p>Understanding asynchronous programming in JavaScript...</p>
+                    <button class="button" onclick="alert('Viewing query details...')">View Details</button>
+                </div>
+                <div class="card">
+                    <h3>How does CSS Flexbox work?</h3>
+                    <p>A guide on mastering Flexbox layout...</p>
+                    <button class="button" onclick="alert('Viewing query details...')">View Details</button>
+                </div>
+            </div>
+            <button class="button" onclick="openForm()">Post a New Query</button>
+        </section>
+
+        <!-- Video Solutions Section -->
+        <section id="video-solutions" class="card-section">
+            <h2>Video Solutions</h2>
+            <p>Access video explanations for coding queries across multiple topics and languages.</p>
+            <a href="video-solutions.html" class="button">Browse Solutions</a>
+        </section>
+
+        <!-- Monetize Section -->
+        <section id="monetize" class="card-section">
+            <h2>Monetize Your Query</h2>
+            <p>Enhance visibility for your questions by monetizing them, allowing others to see them first.</p>
+            <a href="monetize.html" class="button">Learn More</a>
+        </section>
+    </main>
+
+    <!-- Modal for Posting a Query -->
+    <div id="post-query-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Post a New Query</h2>
+            <input type="text" id="query-title" placeholder="Enter your query title">
+            <textarea id="query-description" placeholder="Describe your query here"></textarea>
+            <button class="button" onclick="submitQuery()">Submit Query</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 QueryHaven. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
