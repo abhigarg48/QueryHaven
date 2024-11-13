@@ -26,15 +26,21 @@
             <h2>Browse Queries</h2>
             <div id="queries">
                 <!-- Dynamic queries will be loaded here -->
-                <div class="card">
-                    <h3>What is Async Await in JavaScript?</h3>
+                <div class="card" onclick="openQueryDetails('Async Await in JavaScript')">
+                    <div class="user-info">
+                        <img src="user1.png" alt="User Avatar" class="user-icon">
+                        <h3>What is Async Await in JavaScript?</h3>
+                    </div>
                     <p>Understanding asynchronous programming in JavaScript...</p>
-                    <button class="button" onclick="alert('Viewing query details...')">View Details</button>
+                    <button class="button" onclick="event.stopPropagation(); openQueryDetails('Async Await in JavaScript')">View Details</button>
                 </div>
-                <div class="card">
-                    <h3>How does CSS Flexbox work?</h3>
+                <div class="card" onclick="openQueryDetails('CSS Flexbox')">
+                    <div class="user-info">
+                        <img src="user2.png" alt="User Avatar" class="user-icon">
+                        <h3>How does CSS Flexbox work?</h3>
+                    </div>
                     <p>A guide on mastering Flexbox layout...</p>
-                    <button class="button" onclick="alert('Viewing query details...')">View Details</button>
+                    <button class="button" onclick="event.stopPropagation(); openQueryDetails('CSS Flexbox')">View Details</button>
                 </div>
             </div>
             <button class="button" onclick="openForm()">Post a New Query</button>
@@ -63,6 +69,27 @@
             <input type="text" id="query-title" placeholder="Enter your query title">
             <textarea id="query-description" placeholder="Describe your query here"></textarea>
             <button class="button" onclick="submitQuery()">Submit Query</button>
+        </div>
+    </div>
+
+    <!-- Modal for Query Details -->
+    <div id="query-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQueryDetails()">&times;</span>
+            <div id="query-details">
+                <div class="user-info">
+                    <img src="user1.png" alt="User Avatar" class="user-icon">
+                    <h3 id="query-title-modal">Query Title Here</h3>
+                </div>
+                <p id="query-description-modal">Detailed description of the query will appear here...</p>
+                <div class="solutions">
+                    <h4>Solutions</h4>
+                    <ul id="solution-list">
+                        <li>Solution 1 - Step-by-step guide...</li>
+                        <li>Solution 2 - Another approach...</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
