@@ -44,16 +44,3 @@ function monetizeQuery() {
     alert("Learn more about monetizing your query.");
 }
 
-// Function to open Query Details Modal
-function openQueryDetails(title) {
-    document.getElementById('query-title-modal').innerText = title;
-    document.getElementById('query-description-modal').innerText = "Detailed description of " + title + " will appear here...";
-    
-    document.getElementById('query-details-modal').style.display = 'flex';
-}
-
-// Function to close Query Details Modal
-function closeQueryDetails() {
-    document.getElementById('query-details-modal').style.display = 'none';
-}
-
